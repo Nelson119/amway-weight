@@ -5,6 +5,23 @@
 	position: relative;
 	width: auto;
 
+	.pagetop{
+		@include Item(640, 618, 0, 0, 0, 0, 640);
+		top: 0;
+		left: 0;
+		img{
+			@include SubItem();
+		}
+	}
+	.pagetop2{
+		@include Item(640, 569, 0, 0, 0, 0, 640);
+		top: 0;
+		left: 0;
+		img{
+			@include SubItem();
+		}
+	}
+
 	.avatar{
 		border: 3px solid #00631b;
 		border-radius: 50%;
@@ -31,8 +48,6 @@
 	}
 
 	.girl{
-		margin-top: lp(66, 640);
-		margin-left: lp(203, 640);
 		@include Item(229, 338, 66, 0, 203, 0, 640);
 		position: relative;
 		img{
@@ -52,6 +67,129 @@
 		color: #636363;
 		line-height: em(58,37);
 	}
+
+	.analysis{		
+		@include Item(504, 0, 58, 0, 66, 0, 640);
+		height: auto;
+		position: relative;
+		color: #2e2522;
+		.highlight{
+			color: #8fc72a;
+			&.down, &.up{
+				&:before{
+					@include Item(29*2, 25*2, -3, 0, -45, 0, 180);
+					content:'';
+					position: relative;
+					display: inline-block;
+					background: url(../img/mobile-down.png) 0 0 /cover;
+				}
+			}
+			&.down{
+				&:before{
+					background: url(../img/mobile-down.png) 0 0 /cover;
+				}
+			}
+			&.up{
+				&:before{
+					background: url(../img/mobile-up.png) 0 0 /cover;
+				}
+			}
+		}
+		.header{
+			display: block;
+			height: 2em;
+			span {
+				border-left: 1px solid #2e2522;
+				line-height: 0.8em;
+				display: inline-block;
+				padding-left: lp(15, 633);
+				// padding-right: lp(42, 633);
+				margin-top: lp(35, 633);
+				left: 0;
+				position: absolute;
+				&:nth-child(2){
+					margin-left: lp(220, 633);
+				}
+				&:nth-child(3){
+					margin-left: lp(417, 633);
+				}
+			}
+			border-bottom: 1px solid #2e2522;
+		}
+
+		.scale{
+			@include Item(504, 76, 25, 0, -1, 0, 504);
+			line-height: 1em;
+			position: relative;
+			display: block;
+			white-space: nowrap;
+			.context{
+				@include SubItem();
+			}
+			figure{
+				@include SubItem();
+				top: auto;
+				bottom: 0;
+				height: lp(23, 76);
+				background: url(../img/mobile-bar.png) no-repeat left bottom/auto 100%;
+			}
+		}
+		.three{
+			position: relative;
+			padding-top: lp(240, 504);
+			figure{
+				&:nth-child(1){
+					@include Item(105, 106, 84, 0, 15, 0, 504);
+					img{
+						@include SubItem();
+					}
+					figcaption{
+						@include Item(180, 80, 142, 0, -30, 0, 105);
+						white-space: nowrap;
+						.text{
+							@include SubItem();
+						}
+						label{
+							font-weight: 300;
+						}
+					}
+				}
+				&:nth-child(2){
+					@include Item(98, 115, 80, 0, 214, 0, 504);
+					img{
+						@include SubItem();
+					}
+					figcaption{
+						@include Item(180, 80, 146, 0, -30, 0, 98);
+						white-space: nowrap;
+						.text{
+							@include SubItem();
+						}
+						label{
+							font-weight: 300;
+						}
+					}
+				}
+				&:nth-child(3){
+					@include Item(79, 123, 74, 0, 412, 0, 504);
+					img{
+						@include SubItem();
+					}
+					figcaption{
+						@include Item(180, 80, 150, 0, -45, 0, 79);
+						white-space: nowrap;
+						.text{
+							@include SubItem();
+						}
+						label{
+							font-weight: 300;
+						}
+					}
+				}
+			}
+		}
+	}
+
 	.many-collapse{
 		margin-top: lp(-100, 640);
 	}
@@ -96,6 +234,7 @@
 			margin-top: 0;
 			opacity: 0;
 			height: 0;
+			overflow: hidden;
 			transition: height 0s linear 0.25s, opacity 0.25s linear 0s;
 		}
 
@@ -109,6 +248,161 @@
 			opacity: 1;
 			margin-top: lp(87, 640);
 			transition: margin-top 0s linear 0s, height 0s linear 0s, opacity 0.25s linear 0s;
+		}
+	}
+
+
+	.neutro{
+		color: #00631a;
+		padding: 0 1.5em 0 2.5em;
+		p{
+			color: #636363;
+		}
+		li{
+			margin-bottom: lp(80, 640);
+			line-height: 1.8em;
+			letter-spacing: 0.1em;
+		}
+	}
+	.notice{
+		@include Item(259, 325, 66, 0, 203, 0, 640);
+		position: relative;
+		img{
+			@include SubItem();
+		}
+	}
+
+	.notice-text{
+		color: #00631a;
+		padding: 0 1.5em 0 3.5em;
+		margin-bottom: lp(45, 640);
+		p{
+			color: #636363;
+		}
+		li{
+			list-style: none;
+			counter-increment: i;
+			margin-bottom: lp(35, 640);
+			line-height: 1.8em;
+			letter-spacing: 0.1em;
+			&:before{
+				content: counter(i)'/ ';
+				margin-left: -1.5em;
+			}
+		}
+	}
+	.tip{
+		@include Item(557, 174, 0, 0, 50, 0, 640);
+		margin-bottom: lp(80, 640);
+		position: relative;
+		img{
+			@include SubItem();
+		}
+	}
+	.tip-text{
+		color: #00631a;
+		padding: 0 1.5em 0 3.5em;
+		margin-bottom: lp(45, 640);
+		p{
+			color: #636363;
+		}
+		li{
+			list-style: none;
+			counter-increment: i;
+			margin-bottom: lp(35, 640);
+			line-height: 1.8em;
+			letter-spacing: 0.1em;
+			&:before{
+				content: counter(i)'/ ';
+				margin-left: -1.5em;
+			}
+		}
+		.watchvideo{
+			@include Item(182, 43, 0, 0, 0, 0, 640);
+			margin-top: em(5, 37);
+			margin-left: em(8, 37);
+			position: relative;
+			display: inline-block;
+			img{
+				@include SubItem();
+			}
+		}
+	}
+	.sport{
+		@include Item(531, 450, 56, 0, 50, 0, 640);
+		position: relative;
+		img{
+			@include SubItem();
+			height: auto;
+		}
+		ul{
+			padding: 0;
+			@include Item(640, 0, -450, 0, 0, 0, 531);
+			position: relative;
+			height: auto;
+			li{
+				@include Item(160, 140, 0, 0, 0, 0, 531);
+				position: relative;
+				display: inline-block;
+				.text{
+					vertical-align: bottom;
+					.highlight{
+						color: #8fc422;
+					}
+				}
+			}
+		}
+	}
+	.sport-text{
+		color: #00631a;
+		padding: 0 1.5em 0 1.5em;
+		margin-bottom: lp(45, 640);
+		p{
+			color: #636363;
+		}
+	}
+
+
+	.merchandise-name{
+		color: #00631b;
+		margin-top: lp(120, 640);
+	}
+	.merchandise-text{
+		color: #626262;
+		margin-top: lp(70, 640);
+		font-weight: 300;
+	}
+	.merchandise{
+		padding: 0;
+		margin: lp(111, 640) 0 0;
+		li{
+			list-style: none;
+			@include Item(640, 237, 0, 0, 71, 0, 640);
+			position:relative;
+			figure{
+				@include Item(339, 237, 0, 0, 0, 0, 640);
+				left:0;
+				top:0;
+				img{
+					@include SubItem();
+				}
+			}
+
+			&+li{
+				margin-top: lp(32, 640);
+			}
+			a{
+				@include Item(150, 0, 87, 0, 388, 0, 640);
+				color: #00631b;
+				display: inline-block;
+				&:after{
+					content:'';
+					@include Item(27, 32, 10, 0, 15, 0, 150);
+					position: relative;
+					display: inline-block;
+					background: url(../img/mobile-arrow.png) 0 0/cover;
+				}
+			}
 		}
 	}
 	footer{
