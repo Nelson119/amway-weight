@@ -9,7 +9,7 @@
 	}
 	.terms{
 		@media screen and (max-width: #{$screen-md-num}px) {
-			@include Item(801, 1136, 446, 0, 141, 0, 1080);
+			@include Item(801, 1400, 446, 0, 141, 0, 1080);
 		}
 
 		article{
@@ -29,15 +29,20 @@
 				margin-bottom: 0;
 			}
 			.stars{				
-				margin-top: 5em;
+				margin-top: 3em;
+				margin-left: lp(200, 640);
 				margin-bottom: 0;
 				direction: rtl;
 				position: relative;
+				line-height: 1em;
 				.star{
 					display: inline-block;
 					position: relative;
-					width: lp(79, 801);
-					padding-top: lp(74, 801);
+					width: lp(70, 801);
+					padding-top: lp(70, 801);
+					span{
+						font-weight: 100;
+					}
 					img{
 						@include SubItem();
 					}
@@ -65,7 +70,7 @@
 		}
 
 		.star{
-			width: lg(79, 633)
+			width: lg(55, 633)
 			img{
 				opacity: 0;
 			}
