@@ -397,10 +397,14 @@
 				display: inline-block;
 				&:after{
 					content:'';
-					@include Item(27, 32, 10, 0, 15, 0, 150);
+					@include Item(27, 32, 10, 0, 10, 0, 150);
 					position: relative;
 					display: inline-block;
 					background: url(../img/mobile-arrow.png) 0 0/cover;
+					transform: translateX(0%) translateY(15%);
+					@include animation(
+						arrow-ani 0.75s infinite linear 
+					);
 				}
 			}
 		}
@@ -414,4 +418,20 @@
 			font-weight: 300;
 		}
 	}
+}
+
+@include keyframes( arrow-ani )
+{
+    0% {
+		transform: translateX(0%) translateY(15%);
+    }
+    70% {
+		transform: translateX(30%) translateY(15%);
+    }
+    80% {
+		transform: translateX(10%) translateY(15%);
+    }
+    100% {
+		transform: translateX(0%) translateY(15%);
+    }
 }
