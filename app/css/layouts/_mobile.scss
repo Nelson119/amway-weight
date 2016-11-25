@@ -37,7 +37,8 @@
 		margin-top: lp(405, 640);
 		margin-left: lp(171, 640);
 		line-height: 1.5;
-		font-weight: 300;
+		font-weight: 400;
+		padding-right: 1em;
 	}
 
 	.type-title{
@@ -366,6 +367,7 @@
 	.merchandise-name{
 		color: #00631b;
 		margin-top: lp(120, 640);
+		font-weight: 700;
 	}
 	.merchandise-text{
 		color: #626262;
