@@ -1,4 +1,14 @@
 #step3{
+
+	.word{
+		@include Item(1280, 86, 219, 0, 1, 0, 1280);
+		font-weight: 400;
+		color: #00631a;
+
+		span{
+			@include SubItem();
+		}
+	}
 	.field{
 		@include Item(776, 64, 300, 0, 249, 0);
 		@media screen and (max-width: #{$screen-md-num}px) {
@@ -109,6 +119,9 @@
 			}
 			&.submit{
 				@include Item(110, 110, 516, 0, 922, 0);
+				span{
+					font-weight: 500;
+				}
 				@media screen and (max-width: #{$screen-md-num}px) {
 					@include Item(181, 181, 1361, 0, 675, 0, 1080);
 				}

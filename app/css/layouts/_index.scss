@@ -2,6 +2,7 @@
 	// background: url(../img/start.jpg) 0 0/cover;
 	.go{		
 		@include Item(233, 230, 327, 0, 963, 0, 1280);
+		z-index: 3;
 		img{
 			@include SubItem();
 		}
@@ -12,19 +13,69 @@
 	.word{
 		span{
 			@include SubItem();
+			z-index: 3;
 			font-weight: 300;
 			color: #fff;
 		}
 		@media screen and (max-width: #{$screen-md-num}px) {
 			@include Item(1080, 1, 1280, 0, 1, 0, 1080);
+			z-index: 3;
 		}
 	}
 	.hint{
 		@include Item(1280-60, 73, 720, 0, 60, 0, 1280);
+		z-index: 3;
 		ul{
 			@include SubItem();
+			z-index: 3;
 			font-weight: 300;
 			color: #fff;
 		}
 	}
+	.alter{
+		@include SubItem();
+		height: auto;
+		opacity: 0;
+		@include animation(
+			loop 10s infinite linear 0s
+		);
+	}
+}
+
+
+@include keyframes( loop )
+{
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

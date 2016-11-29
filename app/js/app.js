@@ -64,7 +64,7 @@ $(function(){
 			$(ele).attr('src', $(ele).attr('data-src'));
 		});
 
-		$('.page:eq(0)').addClass('init');
+		// $('.page:eq(0)').addClass('init');
 	}
 });
 

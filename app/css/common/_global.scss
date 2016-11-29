@@ -25,19 +25,19 @@ body {
 		outline: none;
 	}
 
-	&:after{
-		content: '';
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: rgba(0,0,0,1);
-		position: fixed;
+	// &:after{
+	// 	content: '';
+	// 	top: 0;
+	// 	left: 0;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	background: rgba(0,0,0,1);
+	// 	position: fixed;
 
-		@include animation(
-			page-out 0.25s 1 linear forwards 1s
-		);
-	}
+	// 	@include animation(
+	// 		page-out 0.25s 1 linear forwards 1s
+	// 	);
+	// }
 
 }
 
@@ -76,7 +76,7 @@ html{
 	top: 0;
 	overflow-y: auto;
 	overflow-x: hidden;
-	opacity: 0;
+	opacity: 1;
 
 	.background{
 		width: 100%;
@@ -88,19 +88,19 @@ html{
 		text-decoration: none;
 	}
 
-	@include animation(
-		page-out 0.5s 1 linear forwards
-	);
-	&.in{
-		@include animation(
-			page-in 0.5s 1 linear forwards
-		);
-	}
-	&.init{
-		@include animation(
-			page-in 0s 1 linear forwards
-		);
-	}
+	// @include animation(
+	// 	page-out 0.5s 1 linear forwards
+	// );
+	// &.in{
+	// 	@include animation(
+	// 		page-in 0.5s 1 linear forwards
+	// 	);
+	// }
+	// &.init{
+	// 	@include animation(
+	// 		page-in 0s 1 linear forwards
+	// 	);
+	// }
 }
 
 /* Responsive: Portrait tablets and up */
