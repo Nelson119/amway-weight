@@ -87,6 +87,84 @@ html{
 	a{
 		text-decoration: none;
 	}
+	.countdown{
+		@include SubItem();
+		position:fixed;
+		z-index: 10;
+        // height: 0;
+		background: url(../img/countdown.png) center/ lp(446) auto no-repeat rgba(0,0,0,0.7);
+
+		@media screen and (max-width: #{$screen-md-num}px) {			
+			background: url(../img/countdown@32.png) center/ lp(801, 1080) auto no-repeat rgba(0,0,0,0.7);
+		}
+		@include animation(
+			page-out 0s 1 linear forwards
+		);
+		p{
+			@include SubItem();
+			color: #535353;
+		}
+
+		.ok{
+			@include Item(142, 61, 167, 0, 566, 0);
+			margin-top: calc(50vh + #{lp(167-40)});
+			@media screen and (max-width: #{$screen-md-num}px) {
+				@include Item(536, 100, 15, 0, 276, 0, 1080);
+				margin-top: calc(50vh + #{lp(210, 1080)});
+			}
+			color: #00631a;
+			span{
+				@include SubItem();
+				color: #00631a;
+				border: 3px solid #00631a;
+			}
+			&:hover{
+				span{
+					color: #fff;
+					background: #00631a;
+					transition-duration: 0.25s;
+				}
+			}
+		}
+		.dismiss{
+			@include Item(60, 60, 163, 0, 780, 0);
+			margin-top: calc(50vh + #{lp(-180)});
+			@media screen and (max-width: #{$screen-md-num}px) {
+				@include Item(98, 98, -163, 0, 800, 0, 1080);
+				margin-top: calc(50vh + #{lp(-330, 1080)});
+			}
+			img{
+				@include SubItem();
+				&.hover{
+					transition-duration: 0.25s;
+					opacity: 0;
+				}
+			}
+			&:hover{
+				.hover{
+					opacity: 1;
+				}
+			}
+		}
+		.secs{
+			color: #00631a;
+			line-height: 1em;
+			font-weight: 700;
+		}
+		&.fade{
+
+			@include animation(
+				page-out 0.25s 1 linear forwards
+			);
+
+			&.in{
+
+				@include animation(
+					page-in 0.5s 1 linear forwards
+				);
+			}
+		}
+	}
 
 	// @include animation(
 	// 	page-out 0.5s 1 linear forwards

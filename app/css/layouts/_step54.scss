@@ -21,7 +21,7 @@
 	article{
 		@include Item(810, 1210, 430, 0, 172, 0, 1080);
 		overflow-x: hidden;
-		overflow-y: auto;
+		overflow-y: hidden;
 		>section{
 			@include SubItem();
 		}
