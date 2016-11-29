@@ -17,7 +17,7 @@
 	}
 	.word{
 		@media screen and (max-width: #{$screen-md-num}px) {
-			@include Item(1080, 0, 275, 0, 1, 0, 1080);
+			@include Item(1080, 0, 325, 0, 1, 0, 1080);
 			color: #00631a;
 			font-weight: 300;
 
