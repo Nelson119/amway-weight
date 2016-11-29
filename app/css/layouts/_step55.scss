@@ -56,6 +56,11 @@
 						}
 					}
 				}
+				&:hover, &.active{
+					.full, ~ .star .full{
+						opacity: 1;
+					}
+				}
 				&.disabled{
 					&:after{
 						@include SubItem();
