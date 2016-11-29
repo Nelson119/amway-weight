@@ -47,6 +47,29 @@
 		-webkit-overflow-scrolling: touch;
 	}
 
+	.consultant-1{
+		@include Item(264, 264, 570, 0, 184, 0, 1080);
+	}
+	.consultant-2{
+		@include Item(264, 264, 921, 0, 184, 0, 1080);
+	}
+	.consultant-3{
+		@include Item(264, 264, 1272, 0, 184, 0, 1080);
+	}
+	.consultant-1, .consultant-2, .consultant-3{
+		figure{
+			@include SubItem();
+		}
+		aside{
+			color: #00631a;
+			@include Item(0, 0, -1, 0, 370, 0, 264);
+			height: 100%;
+			width: 10em;
+			position: absolute;
+		}
+	}
+
+
 	.agree{
 		@include Item(420, 84, 154, 0, 87, 0);
 		@media screen and (max-width: #{$screen-md-num}px) {
