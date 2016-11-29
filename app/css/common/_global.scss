@@ -34,9 +34,6 @@ body {
 		@media screen and (max-width: #{$screen-md-num}px) {			
 			background: url(../img/countdown@32.png) center/ lp(801, 1080) auto no-repeat rgba(0,0,0,0.7);
 		}
-		@include animation(
-			page-out 0.5s 1 linear forwards
-		);
 		p{
 			@include SubItem();
 			color: #535353;
@@ -89,11 +86,17 @@ body {
 			font-weight: 700;
 		}
 
-		&.in{
-
+		&.fade{
 			@include animation(
-				page-in 0.5s 1 linear forwards
+				page-out 0.25s 1 linear forwards
 			);
+
+			&.in{
+
+				@include animation(
+					page-in 0.5s 1 linear forwards
+				);
+			}
 		}
 	}
 
