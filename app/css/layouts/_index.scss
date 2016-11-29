@@ -1,5 +1,6 @@
 #index{
 	// background: url(../img/start.jpg) 0 0/cover;
+	max-height: 100%;
 	.go{		
 		@include Item(233, 230, 327, 0, 963, 0, 1280);
 		z-index: 3;
@@ -25,6 +26,7 @@
 	.hint{
 		@include Item(1280-60, 73, 720, 0, 60, 0, 1280);
 		z-index: 3;
+		overflow: hidden;
 		ul{
 			@include SubItem();
 			z-index: 3;
