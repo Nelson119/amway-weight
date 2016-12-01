@@ -65,8 +65,9 @@
             </aside>
           </a>1
         </figure>
-        
-        <aside class="countdown in">
+
+        <!-- 倒數 (class 'fade in' 淡入 class 'fade 淡出') -->
+        <aside class="countdown fade in">
             <p class="vertical-middle text-center fontsize-31 fontsize-md-52">
                 <span>
                     太久沒操作了喔<br>再過20秒會自動跳回首頁<br>現在倒數<br>
@@ -74,12 +75,15 @@
                     <br><br>
                 </span>
             </p>
-            <a class="dismiss" href="javascript:">
+            <a class="dismiss" href="javascript:$('.countdown').removeClass('in');void(0)">
                 <img class="hidden-md" src="img/alert-x.png">
                 <img class="hidden-lg" src="img/alert-x@32.png">
             </a>
-            <a class="ok fontsize-35 fontsize-md-52 text-center" href="javascript:"><span>點我繼續</span></a>
+            <a class="ok fontsize-35 fontsize-md-52 text-center" href="javascript:$('.countdown').removeClass('in');void(0)"><span>點我繼續</span></a>
         </aside>
+        <!-- ./倒數 -->
+        
+        
       </section>
       <!--./step5-->
     </section>

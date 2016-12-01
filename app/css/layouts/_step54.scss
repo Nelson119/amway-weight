@@ -19,9 +19,7 @@
 		}
 	}
 	article{
-		@include Item(810, 1210, 430, 0, 172, 0, 1080);
-		overflow-x: hidden;
-		overflow-y: hidden;
+		@include Item(810, 1390, 430, 0, 172, 0, 1080);
 		>section{
 			@include SubItem();
 		}
@@ -49,8 +47,11 @@
 
 	.next{
 		@media screen and (max-width: #{$screen-md-num}px) {
-			@include Item(250, 100, 1663, 0, 403, 0, 1080);
+			@include Item(250, 100, 1750, 0, 403, 0, 1080);
 		}
+		left: auto;
+		top: auto;
+		position: relative;
 		color: #00631a;
 		span{
 			@include SubItem();

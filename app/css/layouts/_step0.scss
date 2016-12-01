@@ -44,50 +44,6 @@
 			@include SubItem();
 		}
 	}
-	.alert{
-		@include SubItem();
-		position:fixed;
-		z-index: 10;
-		background: url(../img/alert@32.jpg) center/ lp(801, 1080) auto no-repeat rgba(0,0,0,0.7);
-		@include animation(
-			page-out 0.5s 1 linear forwards
-		);
-		p{
-			@include SubItem();
-			color: #535353;
-		}
-		.ok{
-			@include Item(250, 100, 15, 0, 420, 0, 1080);
-			margin-top: calc(50vh + #{lp(150, 1080)});
-			color: #00631a;
-			span{
-				@include SubItem();
-				color: #00631a;
-				border: 3px solid #00631a;
-			}
-			&:hover{
-				span{
-					color: #fff;
-					background: #00631a;
-					transition-duration: 0.25s;
-				}
-			}
-		}
-		.dismiss{
-			@include Item(98, 98, -163, 0, 800, 0, 1080);
-			margin-top: calc(50vh + #{lp(-260, 1080)});
-			img{
-				@include SubItem();
-			}
-		}
-
-		&.in{
-
-			@include animation(
-				page-in 0.5s 1 linear forwards
-			);
-		}
-	}
 	@media screen and (min-width: #{$screen-lg-num}px) {
 		display: none;
 	}

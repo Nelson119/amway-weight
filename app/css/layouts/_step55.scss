@@ -61,16 +61,16 @@
 						opacity: 1;
 					}
 				}
-				&.disabled{
-					&:after{
-						@include SubItem();
-						content: '';
-					}
-				}
 			}
 			figure{
 				margin-top: 5em;
 				text-align: center;
+			}
+			&.disabled{
+				&:after{
+					@include SubItem();
+					content: '';
+				}
 			}
 		}
 
