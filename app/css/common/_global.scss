@@ -102,7 +102,7 @@ html{
 		);
 		p{
 			span{
-				max-width: 600px;
+				max-width: 660px;
 			}
 			@include SubItem();
 			color: #535353;
@@ -184,7 +184,7 @@ html{
 		p{
 			@include SubItem();
 			span{
-				max-width: 600px;
+				max-width: 660px;
 			}
 			color: #535353;
 		}
@@ -242,7 +242,7 @@ html{
 			@include SubItem();
 			color: #535353;
 			span{
-				max-width: 600px;
+				max-width: 660px;
 			}
 		}
 		.yes,.no{
