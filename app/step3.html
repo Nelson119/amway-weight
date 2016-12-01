@@ -62,14 +62,38 @@
                     </a>
                     <a data-key="submit" class="key fontsize-35 fontsize-md-52 submit" href="javascript:"><span class="vertical-middle text-center">確認</span></a>
                 </aside>
-                <aside class="alert in">
-                    <p class="vertical-middle text-center fontsize-31 fontsize-md-52"><span>請輸入正確電話號碼<br>此服務僅接受台灣手機號碼</span> </p>
-                    <a class="dismiss" href="javascript:">
+
+
+                <!-- alert (class 'fade in' 淡入 class 'fade 淡出') -->
+                <aside class="alert fade in">
+                    <p class="vertical-middle text-center fontsize-31 fontsize-md-52"><span>請輸入正確電話號碼, 此服務僅接受台灣手機號碼</span> </p>
+                    <a class="dismiss" href="javascript:$('.alert').removeClass('in');void(0)">
                         <img class="hidden-md" src="img/alert-x.png">
                         <img class="hidden-lg" src="img/alert-x@32.png">
                     </a>
-                    <a class="ok fontsize-35 fontsize-md-52 text-center" href="javascript:"><span>確定</span></a>
+                    <a class="ok fontsize-35 fontsize-md-52 text-center" href="javascript:$('.alert').removeClass('in');void(0)"><span>確定</span></a>
                 </aside>
+                <!-- ./alert -->
+
+
+                <!-- 倒數 (class 'fade in' 淡入 class 'fade 淡出') -->
+                <aside class="countdown fade in">
+                    <p class="vertical-middle text-center fontsize-31 fontsize-md-52">
+                        <span>
+                            太久沒操作了喔, 再過20秒會自動跳回首頁, 現在倒數
+                            <span class="secs fontsize-50">20</span>
+                            <br><br>
+                        </span>
+                    </p>
+                    <a class="dismiss" href="javascript:$('.countdown').removeClass('in');void(0)">
+                        <img class="hidden-md" src="img/alert-x.png">
+                        <img class="hidden-lg" src="img/alert-x@32.png">
+                    </a>
+                    <a class="ok fontsize-35 fontsize-md-52 text-center" href="javascript:$('.countdown').removeClass('in');void(0)"><span>確定</span></a>
+                </aside>
+                <!-- ./倒數 -->
+
+
             </section>
             <!--./step3-->
         </section>

@@ -14,9 +14,11 @@
 			@include SubItem();
 			.text{
 				color: #363636;
+				max-width: 300px;
 			}
 			.number{
 				font-weight: 300;
+				text-indent: -1em;
 			}
 		}
 	}
