@@ -4,6 +4,7 @@
 	background-image: url(../img/mobile-background.jpg);
 	position: relative;
 	width: auto;
+	padding-top: lp(405, 640);
 
 	.pagetop{
 		@include Item(640, 618, 0, 0, 0, 0, 640);
@@ -34,7 +35,7 @@
 
 	.welcome{
 		color: #00631b;
-		margin-top: lp(405, 640);
+		margin-top: lp(1, 640);
 		margin-left: lp(171, 640);
 		line-height: 1.5;
 		font-weight: 400;
@@ -368,6 +369,21 @@
 		color: #00631b;
 		margin-top: lp(120, 640);
 		font-weight: 700;
+		a{
+			color: #00631b;
+			white-space: nowrap;
+			&:after{
+				content:'';
+				@include Item(27, 32, 10, 0, 10, 0, 320);
+				position: relative;
+				display: inline-block;
+				background: url(../img/mobile-arrow.png) 0 0/cover;
+				transform: translateX(0%) translateY(15%);
+				@include animation(
+					arrow-ani 0.75s infinite linear 
+				);
+			}
+		}
 	}
 	.merchandise-text{
 		color: #626262;
@@ -409,6 +425,14 @@
 					);
 				}
 			}
+		}
+	}
+
+	.bkall{
+		@include Item(522, 239, 98, 0, 61, 0, 640);
+		position:relative;
+		img{
+			@include SubItem();	
 		}
 	}
 	footer{
