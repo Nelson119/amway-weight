@@ -50,13 +50,13 @@
 						opacity: 0;
 						transition-duration: 0.25s;
 					}
-					&:hover, &.active{
+					&:active, &.active{
 						.full, ~ .star .full{
 							opacity: 1;
 						}
 					}
 				}
-				&:hover, &.active{
+				&:active, &.active{
 					.full, ~ .star .full{
 						opacity: 1;
 					}
@@ -95,7 +95,7 @@
 			color: #00631a;
 			border: 3px solid #00631a;
 		}
-		&:hover{
+		&:active{
 			span{
 				color: #fff;
 				background: #00631a;
