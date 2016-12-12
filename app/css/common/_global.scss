@@ -252,6 +252,10 @@ html{
 	}
 }
 
+html,body,.container, .page{
+	overflow: hidden!important;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .footer {
