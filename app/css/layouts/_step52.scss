@@ -71,7 +71,7 @@
 			color: #00631a;
 			border: 3px solid #00631a;
 		}
-		&:hover{
+		&:active{
 			span{
 				color: #fff;
 				background: #00631a;
@@ -116,7 +116,7 @@
 				color: #00631a;
 				border: 3px solid #00631a;
 			}
-			&:hover{
+			&:active{
 				span{
 					color: #fff;
 					background: #00631a;
@@ -138,7 +138,7 @@
 					opacity: 0;
 				}
 			}
-			&:hover{
+			&:active{
 				.hover{
 					opacity: 1;
 				}
