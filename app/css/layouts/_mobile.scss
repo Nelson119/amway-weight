@@ -54,6 +54,7 @@
 		position: relative;
 		img{
 			@include SubItem();
+			height: auto;
 		}
 	}
 	.expert{
@@ -271,6 +272,7 @@
 		position: relative;
 		img{
 			@include SubItem();
+			height: auto;
 		}
 	}
 
@@ -299,6 +301,7 @@
 		position: relative;
 		img{
 			@include SubItem();
+			height: auto;
 		}
 	}
 	.tip-text{
@@ -327,6 +330,7 @@
 			display: inline-block;
 			img{
 				@include SubItem();
+				height: auto;
 			}
 		}
 	}
@@ -403,6 +407,7 @@
 				top:0;
 				img{
 					@include SubItem();
+					height: auto;
 				}
 			}
 
@@ -433,6 +438,7 @@
 		position:relative;
 		img{
 			@include SubItem();	
+			height: auto;
 		}
 	}
 	footer{
