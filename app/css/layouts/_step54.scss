@@ -1,7 +1,7 @@
 #step54{
 	.word{
 		@media screen and (max-width: #{$screen-md-num}px) {
-			@include Item(1080, 0, 275, 0, 350, 0, 1080);
+			@include Item(1080, 0, 175, 0, 350, 0, 1080);
 			color: #00631a;
 			font-weight: 300;
 
@@ -12,14 +12,14 @@
 	}
 	.avatar{
 		@media screen and (max-width: #{$screen-md-num}px) {
-			@include Item(138, 138, 266, 0, 172, 0, 1080);
+			@include Item(138, 138, 166, 0, 172, 0, 1080);
 			img{
 				@include SubItem();
 			}
 		}
 	}
 	article{
-		@include Item(810, 1390, 430, 0, 172, 0, 1080);
+		@include Item(810, 1390, 330, 0, 172, 0, 1080);
 		>section{
 			@include SubItem();
 		}
@@ -54,7 +54,7 @@
 
 	.next{
 		@media screen and (max-width: #{$screen-md-num}px) {
-			@include Item(250, 100, 1750, 0, 403, 0, 1080);
+			@include Item(250, 100, 1850, 0, 403, 0, 1080);
 		}
 		left: auto;
 		top: auto;
