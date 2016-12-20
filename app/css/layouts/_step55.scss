@@ -50,13 +50,13 @@
 						opacity: 0;
 						transition-duration: 0.25s;
 					}
-					&:active, &.active{
+					&:hover, &:focus, &.active{
 						.full, ~ .star .full{
 							opacity: 1;
 						}
 					}
 				}
-				&:active, &.active{
+				&:hover, &:focus, &.active{
 					.full, ~ .star .full{
 						opacity: 1;
 					}
