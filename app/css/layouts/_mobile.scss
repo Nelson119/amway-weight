@@ -50,7 +50,7 @@
 	}
 
 	.girl{
-		@include Item(229, 338, 66, 0, 203, 0, 640);
+		@include Item(576, 563, 33, 0, 33, 0, 640);
 		position: relative;
 		img{
 			@include SubItem();
@@ -251,7 +251,7 @@
 			height: auto;
 			min-height: 5em;
 			opacity: 1;
-			margin-top: lp(87, 640);
+			margin-top: lp(0, 640);
 			transition: margin-top 0s linear 0s, height 0s linear 0s, opacity 0.25s linear 0s;
 		}
 	}
@@ -270,7 +270,7 @@
 		}
 	}
 	.notice{
-		@include Item(259, 325, 66, 0, 203, 0, 640);
+		@include Item(615, 453, 10, 0, 12.5, 0, 640);
 		position: relative;
 		img{
 			@include SubItem();
@@ -298,8 +298,7 @@
 		}
 	}
 	.tip{
-		@include Item(557, 174, 0, 0, 50, 0, 640);
-		margin-bottom: lp(80, 640);
+		@include Item(615, 453, 1, 0, 12, 0, 640);
 		position: relative;
 		img{
 			@include SubItem();
