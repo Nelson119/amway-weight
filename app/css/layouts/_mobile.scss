@@ -20,14 +20,14 @@
 		margin-top: lp(405, 640);
 		margin-left: lp(171, 640);
 		line-height: 1.5;
-		font-weight: 300;
+		font-weight: 600;
 	}
 
 	.type-title{
 		color: #00631b;
 		margin-top: lp(135, 640);
 		line-height: 1.5;
-		font-weight: 300;
+		font-weight: 600;
 	}
 
 	.girl{
@@ -61,7 +61,7 @@
 		cursor: pointer;
 		margin-bottom: lp(62, 640);
 		position: relative;		
-		font-weight: 300;
+		font-weight: 600;
 		background: url(../img/collapse-bar.png) no-repeat;
 		label{
 			@include SubItem();			
@@ -69,7 +69,7 @@
 			padding-left: lp(28, 640);
 			color: #fff;
 			text-decoration: none;
-			font-weight: 300;
+			font-weight: 600;
 
 			&:after{
 				transition: transform 0.3s linear 0s;
@@ -82,7 +82,7 @@
 	.recommend-title{
 		@include Item(524, 63, 139, 0, 48, 0, 640);
 		position: relative;
-		font-weight: 300;
+		font-weight: 600;
 		background: url(../img/mobile-analytic-title.png) no-repeat 0 0/100% auto;
 		span{
 			@include SubItem();			
@@ -117,7 +117,7 @@
 		aside{
 			@include SubItem();	
 			color: #00631b;
-			font-weight: 300;
+			font-weight: 600;
 		}
 	}
 }

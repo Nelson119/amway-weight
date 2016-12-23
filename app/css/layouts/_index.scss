@@ -15,7 +15,7 @@
 		span{
 			@include SubItem();
 			z-index: 3;
-			font-weight: 300;
+			font-weight: 600;
 			color: #fff;
 		}
 		@media screen and (max-width: #{$screen-md-num}px) {
@@ -30,7 +30,7 @@
 		ul{
 			@include SubItem();
 			z-index: 3;
-			font-weight: 300;
+			font-weight: 600;
 			color: #fff;
 		}
 	}
