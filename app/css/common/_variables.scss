@@ -29,6 +29,13 @@
 			font-size: percentage($i/$font-size-base-num);
 		}
 	}
+	.fontsize-sm-#{$i} {
+		@media screen and (max-width: #{$screen-sm-num}px) {
+			font-size: #{$i}px;
+			font-size: percentage($i/$font-size-base-num);
+			font-size: vwsm($i);
+		}
+	}
 }
 
 @mixin keyframes($animationName)
@@ -57,6 +64,10 @@
 
 @function lp($pixels, $context: 1280){
 	@return percentage($pixels/$context);
+}
+
+@function em($pixels, $base: $font-size-base-num){
+	@return #{$pixels/$base}em;
 }
 
 @mixin Item($width, $height, $top, $bottom, $left, $right, $context: 1280) {
