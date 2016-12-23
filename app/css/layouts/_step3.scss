@@ -41,15 +41,16 @@
 				line-height: 130%;
 			}
 
-			&:active{
-				span{
-					color: #fff;
-					background: #00631a;
-					transition-duration: 0.25s;
+			&:hover{
+				span{							
+					@include animation(
+						activeText 0.3s 1 linear forwards
+					);
 				}
 				.hover{
-					opacity: 1;
-					transition-duration: 0.25s;
+					@include animation(
+						activeImage 0.3s 1 linear forwards
+					);
 				}
 			}
 			@include Item(110, 110, 387, 0, 240, 0);
@@ -184,4 +185,32 @@
 			);
 		}
 	}
+}
+
+@include keyframes( activeText )
+{
+    0% {
+		color: #00631a;
+		background: rgba(0,0,0,0);
+    }
+    20% {
+		color: #fff;
+		background: #00631a;
+    }
+    100% {
+		color: #00631a;
+		background: rgba(0,0,0,0);
+    }
+}
+@include keyframes( activeImage )
+{
+    0% {
+		opacity: 0;
+    }
+    20% {
+		opacity: 1;
+    }
+    100% {
+		opacity: 0;
+    }
 }
