@@ -12,7 +12,7 @@
 	.word{
 		span{
 			@include SubItem();
-			font-weight: 300;
+			font-weight: 600;
 			color: #fff;
 		}
 		@media screen and (max-width: #{$screen-md-num}px) {
@@ -23,7 +23,7 @@
 		@include Item(1280-60, 73, 720, 0, 60, 0, 1280);
 		ul{
 			@include SubItem();
-			font-weight: 300;
+			font-weight: 600;
 			color: #fff;
 		}
 	}

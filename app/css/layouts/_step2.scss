@@ -14,7 +14,7 @@
 		@include Item(200, 100, 413, 0, 197, 0);
 		span{
 			@include SubItem();
-			font-weight: 300;
+			font-weight: 600;
 		}
 		@media screen and (max-width: #{$screen-md-num}px) {
 			@include Item(300, 200, 682, 0, 227, 0, 1080);
@@ -25,7 +25,7 @@
 		@include Item(200, 100, 413, 0, 681, 0);
 		span{
 			@include SubItem();
-			font-weight: 300;
+			font-weight: 600;
 		}
 		@media screen and (max-width: #{$screen-md-num}px) {
 			@include Item(300, 200, 1192, 0, 227, 0, 1080);
@@ -41,7 +41,7 @@
 		span{
 			@include SubItem();
 			height: 110%;
-			font-weight: 300;
+			font-weight: 600;
 		}
 		&:active{
 			transition-duration: 0.25s;

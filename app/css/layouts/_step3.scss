@@ -19,7 +19,7 @@
 		@media screen and (max-width: #{$screen-md-num}px) {
 			@include Item(1080, 0, 325, 0, 1, 0, 1080);
 			color: #00631a;
-			font-weight: 300;
+			font-weight: 600;
 
 			span{
 				@include SubItem();
@@ -28,7 +28,7 @@
 	}
 	.keypad{
 		.key{
-			font-weight: 300;
+			font-weight: 600;
 			color: #00631a;
 			span, img{
 				@include SubItem();

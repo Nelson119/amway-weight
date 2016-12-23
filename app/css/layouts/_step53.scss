@@ -3,7 +3,7 @@
 		@media screen and (max-width: #{$screen-md-num}px) {
 			@include Item(1080, 0, 175, 0, 350, 0, 1080);
 			color: #00631a;
-			font-weight: 300;
+			font-weight: 600;
 
 			span{
 				@include SubItem();
@@ -24,7 +24,7 @@
 		@media screen and (max-width: #{$screen-md-num}px) {
 			@include Item(1080, 0, 503, 0, 220, 0, 1080);
 			color: #626262;
-			font-weight: 300;
+			font-weight: 600;
 
 			span{
 				@include SubItem();

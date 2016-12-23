@@ -3,7 +3,7 @@
 		@media screen and (max-width: #{$screen-md-num}px) {
 			@include Item(1080, 0, 175, 0, 350, 0, 1080);
 			color: #00631a;
-			font-weight: 300;
+			font-weight: 600;
 
 			span{
 				@include SubItem();
@@ -35,7 +35,7 @@
 				line-height: 1.5em;
 				padding-left: lp(50,810);
 				color: #fff;
-				font-weight: 300;
+				font-weight: 600;
 			}
 		}
 		p{

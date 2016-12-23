@@ -3,7 +3,7 @@
 		@media screen and (max-width: #{$screen-md-num}px) {
 			@include Item(1080, 0, 275, 0, 1, 0, 1080);
 			color: #00631a;
-			font-weight: 300;
+			font-weight: 600;
 
 			span{
 				@include SubItem();
@@ -32,13 +32,13 @@
 				background: #ececec;
 			h3{
 				color: #00631a;
-				font-weight: 300;
+				font-weight: 600;
 			}
 			aside{
 				color: #2e2522;
 				line-height: 1.8em;
 				height: auto;
-				font-weight: 300;
+				font-weight: 600;
 				@media screen and (max-width: #{$screen-md-num}px) {
 					line-height: 1.5;
 				}
@@ -85,7 +85,7 @@
 	.agree, .disagree{
 		label{
 			color: #00631a;
-			font-weight: 300;
+			font-weight: 600;
 			line-height: 1;
 			@include SubItem();
 			padding-left: lp(80, 420);

@@ -3,7 +3,7 @@
 
 	.word{
 		@include Item(1280, 86, 219, 0, 1, 0, 1280);
-		font-weight: 300;
+		font-weight: 600;
 
 		span{
 			@include SubItem();
@@ -35,7 +35,7 @@
 		span{
 			@include SubItem();
 			line-height: 2em;
-			font-weight: 300;
+			font-weight: 600;
 		}
 		&:active{
 			transition-duration: 0.25s;
