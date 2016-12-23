@@ -48,7 +48,7 @@ $screen-sm-num:              640;
 $screen-sm:                  #{$screen-sm-num}px;
 $screen-md-num:              1080;
 $screen-md:                  #{$screen-md-num}px;
-$screen-lg-num:              1281;
+$screen-lg-num:              1280;
 $screen-lg:                  #{$screen-lg-num}px;
 
 
@@ -69,3 +69,10 @@ $font-size-h3:            percentage(24/$font-size-base-num); // ~24px
 $font-size-h4:            percentage(18/$font-size-base-num); // ~18px
 $font-size-h5:            100%;
 $font-size-h6:            percentage(12/$font-size-base-num); // ~12px
+
+
+@media screen and (min-width: #{$screen-lg}) {
+	.visible-inline-lg.visible-md{
+		display: inline!important;
+	}
+}
