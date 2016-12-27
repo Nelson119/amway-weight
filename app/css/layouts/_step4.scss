@@ -17,6 +17,28 @@
 			}
 		}
 	}
+	.next{
+		@include Item(142, 61, 167, 0, 566, 0);
+		margin-top: calc(50vh + #{lp(167-40)});
+		@media screen and (max-width: #{$screen-md-num}px) {
+			@include Item(350, 100, 15, 0, 370, 0, 1080);
+			margin-top: calc(50vh + #{lp(800, 1080)});
+			line-height: 1.8em;
+		}
+		color: #00631a;
+		span{
+			@include SubItem();
+			color: #00631a;
+			border: 3px solid #00631a;
+		}
+		&:hover{
+			span{
+				color: #fff;
+				background: #00631a;
+				transition-duration: 0.25s;
+			}
+		}
+	}
 	.word{
 		@include SubItem();
 		color: #00631a;
