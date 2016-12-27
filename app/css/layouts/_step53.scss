@@ -41,7 +41,7 @@
 	}
 	.terms{
 		@media screen and (max-width: #{$screen-md-num}px) {
-			@include Item(633, 1060, 750, 0, 200, 0, 1080);
+			@include Item(633, 1060, 850, 0, 200, 0, 1080);
 		}
 
 		article{
