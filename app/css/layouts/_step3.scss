@@ -42,17 +42,34 @@
 				line-height: 130%;
 			}
 
-			&:hover{
+			// &:hover{
+			// 	span{							
+			// 		@include animation(
+			// 			activeText 0.3s 1 linear forwards
+			// 		);
+			// 	}
+			// 	.hover{
+			// 		@include animation(
+			// 			activeImage 0.3s 1 linear forwards
+			// 		);
+			// 	}
+			// }
+
+			&:active{
 				span{							
-					@include animation(
-						activeText 0.3s 1 linear forwards
-					);
+					color: #fff;
+					background-color: #00631a;
 				}
 				.hover{
-					@include animation(
-						activeImage 0.3s 1 linear forwards
-					);
+					opacity: 1;
 				}
+			}
+			span:active{
+				color: #fff;
+				background-color: #00631a;
+			}
+			.hover:active{
+				opacity: 1;
 			}
 			@include Item(110, 110, 387, 0, 240, 0);
 			@media screen and (max-width: #{$screen-md-num}px) {
