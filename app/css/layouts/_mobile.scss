@@ -26,7 +26,7 @@
 	.avatar{
 		border: 3px solid #00631b;
 		border-radius: 50%;
-		@include Item(100, 100, 405, 0, 42, 0, 640);
+		@include Item(112, 100, 405, 0, 42, 0, 640);
 		img{
 			border-radius: 50%;
 			@include SubItem();
