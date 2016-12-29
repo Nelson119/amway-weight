@@ -19,7 +19,7 @@
 		}
 	}
 	article{
-		@include Item(810, 1390, 330, 0, 172, 0, 1080);
+		@include Item(810, 1390, 330, 0, 150, 0, 1080);
 		>section{
 			@include SubItem();
 		}
@@ -39,6 +39,7 @@
 			}
 		}
 		p{
+			text-align: justify;
 			color: #08651c;
 			margin-bottom: lp(35,810);
 			margin-top: 0;
