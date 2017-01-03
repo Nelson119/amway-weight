@@ -1,5 +1,5 @@
 #mobile{
-	background-size: 100% auto;
+	background-size: 100% 100%;
 	background-position: center top;
 	background-image: url(../img/mobile-background.jpg);
 	position: relative;
@@ -24,7 +24,7 @@
 	}
 
 	.avatar{
-		border: 3px solid #00631b;
+		// border: 3px solid #00631b;
 		border-radius: 50%;
 		@include Item(112, 100, 405, 0, 42, 0, 640);
 		img{
