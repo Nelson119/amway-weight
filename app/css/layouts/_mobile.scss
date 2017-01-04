@@ -45,7 +45,7 @@
 
 	.type-title{
 		color: #00631b;
-		margin-top: lp(135, 640);
+		margin-top: lp(64, 640);
 		line-height: 1.5;
 		font-weight: 300;
 	}
@@ -182,7 +182,7 @@
 						@include SubItem();
 					}
 					figcaption{
-						@include Item(180, 80, 150, 0, -45, 0, 79);
+						@include Item(180, 80, 152, 0, -45, 0, 79);
 						white-space: nowrap;
 						.text{
 							@include SubItem();
@@ -217,9 +217,9 @@
 
 			&:after{
 				transition: transform 0.3s linear 0s;
-				@include Item(84, 84, -11, 0, 355, 0, 391);
+				@include Item(84, 90, -11, 0, 371, 0, 391);
 				content: '';
-				background: url(../img/collapse-btn.png) no-repeat center/cover;
+				background: url(../img/collapse-btn.png) no-repeat center/100% auto;
 			}
 		}
 	}
