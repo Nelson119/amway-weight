@@ -137,6 +137,7 @@
 				}
 			}
 			&.submit{
+				font-weight: 500;
 				@include Item(110, 110, 516, 0, 922, 0);
 				@media screen and (max-width: #{$screen-md-num}px) {
 					@include Item(181, 181, 1361, 0, 675, 0, 1080);
